@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="indexAR.html">
+    <title>HAPPY BIRTHDAY!!!</title>
+</head>
+<body>
+
+    <header>
+        <div class="song-selection">
+                <p>Snowfall(Slowed & Reverbed)</p>
+                <audio controls>
+                    <source src="stellar.mp3" type="audio/mp3">
+                </audio>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="#services" class="mobile-navB">Services</a>
+        <a href="#projects" class="mobile-navB">Projects</a>
+        <a href="#contact" class="mobile-navB">Contact</a>
+        <a href="indexAR.html">Arabic</a>
+    </nav>
+
+    <section class="main">
+        <div>
+            <h2>And now it is the time of the year for.....<br><span>HAPPY BIRTHDAY!!!!</span></h2>
+            <h3>I hope you fulfill your dreams</h3>
+            <a href="#services" class="main-btn">Open Your Gift!!!</a>
+        </div>
+    </section>
+
+
+    <section class="cards" id="services">
+        <h2 class="title">Your gift!! (:  (Click to open)</h2>
+        <div class="content">
+            <div class="image-container">
+                <img id="image" src="image1.png" alt="Image 1">
+              </div>
+        </div>
+    </section>
+
+    <script>
+        const image = document.getElementById('image');
+            let currentImage = 'image1.png'; // keep track of the current image
+
+            image.addEventListener('click', () => {
+                if (currentImage === 'image1.png') {
+                    image.src = 'yesss.png';
+                    currentImage = 'yesss.png';
+                } else {
+                    image.src = 'image1.png';
+                        currentImage = 'image1.png';
+                    }
+        });
+     </script>
+
+    <section class="projects" id="projects">
+        <h2 class="title">How i feel rn:</h2>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="cat jumping.gif" />
+            </div>
+            <p>i hope you do so too :)</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">special bday message:</h2>
+            <div class="project-image">
+                <img src="i.png" />
+            </div>
+    </section>
+
+    
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Mohamed Walid</span></p>
+        <div class="social-icons">
+        </div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
